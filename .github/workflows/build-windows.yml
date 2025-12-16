@@ -18,8 +18,8 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install PyInstaller
-        run: pip install pyinstaller
+      - name: Install PyInstaller and Pillow
+        run: pip install pyinstaller pillow
 
       - name: Build EXE
         run: pyinstaller --onefile --windowed --icon=icono_windows.ico organizador_gui.py

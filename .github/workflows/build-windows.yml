@@ -25,8 +25,7 @@ jobs:
         run: pyinstaller --onefile --windowed --icon=icono_windows.ico organizador_gui.py
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: Organizador-Windows
           path: dist/organizador_gui.exe
-
